@@ -18,3 +18,7 @@ sample.txt
 .vscode/*
 !.vscode/
 !.vscode/settings.json
+
+# port 담당자의 comment API 로컬 실행 파일
+# 팀 공용 main.py에는 포함하지 않고 로컬 uvicorn 실행에만 사용합니다.
+app/port.py
