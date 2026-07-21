@@ -84,6 +84,16 @@ uvicorn app.main:app --reload
 
 ## API 엔드포인트
 
+### 사용자
+
+- `POST /users`: 사용자 생성
+- `GET /users`: 사용자 전체 조회
+- `GET /users/{user_id}`: 사용자 한 명 조회
+- `PUT /users/{user_id}`: 사용자 수정
+- `DELETE /users/{user_id}`: 사용자 삭제
+
+비밀번호는 생성과 수정 요청으로만 받고 응답에는 포함하지 않습니다.
+
 ### 채팅
 
 - POST /chat/gemini
@@ -107,6 +117,23 @@ uvicorn app.main:app --reload
 ```bash
 pytest
 ```
+
+사용자 CRUD만 실행하려면 다음 명령을 사용합니다.
+
+```bash
+pytest tests/test_user_router.py -v
+```
+
+## Render 배포
+
+저장소 루트의 `render.yaml`을 사용하는 Render Blueprint 배포를 지원합니다.
+
+1. 변경 내용을 GitHub 저장소에 push합니다.
+2. Render에서 **New > Blueprint**를 선택하고 저장소를 연결합니다.
+3. 필요하면 `GEMINI_API_KEY` 값을 입력합니다.
+4. 배포가 끝나면 `/health`와 `/docs`에서 상태와 Swagger 문서를 확인합니다.
+
+Render 설정에는 프로젝트 루트(`team1_0721`), 설치 명령, `$PORT` 기반 실행 명령이 이미 포함되어 있습니다.
 
 ## 참고 사항
 
