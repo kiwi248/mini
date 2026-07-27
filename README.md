@@ -6,7 +6,7 @@ MINI
     ├── app_pages
     │   ├── ykw
     │   │    ├──survey.py
-    │   │    ├──chattable.py
+    │   │    ├──charttable.py
     │   │    └── pizza.py
     │   ├── port
     │   ├── sym
