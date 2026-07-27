@@ -1,0 +1,11 @@
+MINI
+  |-03_mini_project
+  |-team1_0721
+  |-team1_frontend_0727
+      |-app_pages
+          |-ykw.py
+          |-port.py
+          |-sym.py
+          |-jso.py
+          |-inhye.py
+      |-app.py
