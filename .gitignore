@@ -1,0 +1,29 @@
+# Python 가상환경
+.venv/
+venv/
+env/
+
+# Python 캐시 파일
+__pycache__/
+*.py[cod]
+
+# 환경변수 파일
+.env
+.env.*
+
+# Streamlit 비밀 설정
+.streamlit/secrets.toml
+
+# 운영체제 파일
+.DS_Store
+Thumbs.db
+
+# VS Code 개인 설정
+.vscode/
+
+# 테스트/분석 캐시
+.pytest_cache/
+.mypy_cache/
+
+# 로그 파일
+*.log
