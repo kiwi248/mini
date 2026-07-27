@@ -20,12 +20,15 @@ port_select_page = st.Page("app_pages/port/charttable.py", url_path="port_select
 port_pizza_page = st.Page("app_pages/port/pizza.py", url_path="port_pizza")
 port_survey_page = st.Page("app_pages/port/survey.py", url_path="port_survey")
 
-
+jso_select_page = st.Page("app_pages/jso/charttable.py", url_path="jso_select")
+jso_pizza_page = st.Page("app_pages/jso/pizza.py", url_path="jso_pizza")
+jso_survey_page = st.Page("app_pages/jso/survey.py", url_path="jso_survey")
 
 
 pages = [ykw_pizza_page, ykw_select_page, ykw_survey_page,
          sym_select_page, sym_pizza_page, sym_survey_page,
-         port_select_page, port_pizza_page, port_survey_page]
+         port_select_page, port_pizza_page, port_survey_page,
+         jso_select_page, jso_pizza_page, jso_survey_page]
 
 
 
@@ -43,6 +46,9 @@ with st.sidebar:
     st.page_link(port_pizza_page, label="😀 port Pizza")
     st.page_link(port_select_page, label="😀 port Select")
     st.page_link(port_survey_page, label="😀 port Survey")
+    st.page_link(jso_pizza_page, label="😀 jso Pizza")
+    st.page_link(jso_select_page, label="😀 jso Select")
+    st.page_link(jso_survey_page, label="😀 jso Survey")
 
 
 navigation.run()
